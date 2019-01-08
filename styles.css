@@ -1,0 +1,579 @@
+/*
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img, fieldset{
+    padding: 0px;
+    border: none;
+	margin: 0px;
+	line-height: 0px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+body{	
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #ffffff;
+    background: url(images/back_all.gif);
+}
+
+h2{
+	font: 18px Arial, Helvetica, sans-serif;
+	color: #C35439;
+	text-align: center;
+	font-weight:  normal;
+	padding-bottom: 10px;
+}
+ #new1
+ {
+ background-color: white;
+ width:500px;
+ height:300px;
+ margin-top:100px;
+ margin-left:50px;
+ 
+ }
+ .tex1
+ {
+ width:200px;
+ color:black;
+ font: italic  20px Georgia;	
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ border-radius: 30px;
+ padding-left: 10px;
+	padding-right: 10px;
+	
+ }
+
+h3{
+	font: 30px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight:  normal;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+
+.clear{
+	clear: both;	
+}
+
+#grad_bg{
+	position: absolute;
+	height: 664px;
+	background: url(images/bg_grad.jpg) repeat-x top;
+	width: 100%;
+}
+
+#wrap{
+	position: relative;
+	width: 946px;
+	margin: 0 auto;
+	background: white;
+}
+
+/*
+	menu
+*/
+
+#menu{
+	 background: olive;
+	height: 86px;
+	width: 897px;
+	border-left: 10px solid #ffffff;
+	border-right: 10px solid #ffffff;
+}
+
+#menu ul{
+	padding-left: 0px;
+    list-style: none;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#menu ul li{
+	display: inline;
+}
+
+#menu ul li a{
+	font: 34px  Arial, Helvetica, sans-serif;
+    color: #ffffff;
+	text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 160px;
+    height: 86px;
+	line-height: 86px;
+	text-shadow: #000	 1px -1px 1px;
+}
+
+#menu ul li a:hover,  #menu ul li .active{
+	color: maroon;
+}
+
+
+/*logo*/
+
+#logo{
+	height: 100px;
+	/* padding-top: 32px; */
+	padding-left: 30px;
+	
+	}
+
+#logo h1 a{
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 50px;
+}
+
+#logo a small{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*
+	content
+*/
+
+#content_bg{
+
+	padding: 15px;
+}
+
+/*
+	header box
+*/
+
+#header{
+	background: url(images/header.jpg) no-repeat;
+	height: 250px;
+	border: 10px solid #ffffff;
+	width: 897px;
+	   
+}
+
+/*
+	content white box
+*/
+
+#content_white{
+	background: #ffffff;
+	padding: 22px;
+	width: 873px;
+}
+#content_white1{
+	background: white;
+	padding: 22px;
+	
+	height: 500px;
+}
+#content_white2{
+	background: white;
+	padding: 22px;
+	width: 873px;
+	height: 500px;
+}
+
+#content_white p{
+	color: #666666;
+	padding-top: 10px;
+}
+
+#content{
+	background: url(images/bor_vertical.gif) repeat-y 546px;
+	margin-bottom: 10px;
+}
+
+#content a{
+	color: #C35439;
+	font-weight: bold;
+}
+
+#content a:hover{
+	color: #424242;
+}
+
+#content_left{
+	width: 537px;
+	padding-right: 20px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#content_left h2{
+	padding-bottom: 10px;
+	font-size: 30px;
+}
+
+#content_left p{
+	line-height: 18px;
+}
+
+#content_left img{
+	padding-right: 20px;
+	float: left;	
+}
+
+.left_col1{
+	float: left;
+	width: 50%;
+}
+
+.left_col1 p{
+	padding-right: 10px;
+	line-height: 18px;
+}
+
+.left_col2{
+	float: right;
+	width: 50%;
+}
+
+.left_col2 ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.left_col2 ul li{
+    margin-bottom: 10px;
+    background: url(images/ls.gif) no-repeat center left;
+	padding-left: 15px;
+}
+
+#content_right{
+	width: 306px;
+	float: right;
+	padding-bottom: 10px;
+}
+
+#content_right h2{
+	text-align: center;
+	font-size: 30px;
+}
+
+.content_right_pad{
+	padding: 20px 5px 0px 10px;
+}
+
+.news{
+	padding-bottom: 10px;
+}
+
+.news img{
+	padding-right: 10px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.date{
+	display: block;
+	font-weight: bold;
+
+	color: #C35439
+}
+#sha
+{
+	
+	background-color: teal;
+	border-color: black;
+	border-radius:10px;
+	width:950px;
+	margin-left:-38px;
+	margin-top: 18px;
+	
+}
+
+.bor_goriz{
+	background: url(images/bor_goriz.gif) repeat-x top;
+	height: 2px;
+}
+
+/*
+	3column
+*/
+
+#column3{
+	clear: both;
+	padding: 0px 10px 15px 10px;
+}
+
+#col1, #col2, #col3{
+	float: left;
+	width: 285px;
+}
+
+#col2{
+	padding-left: 79px;
+	padding-right: 79px;
+}
+
+.pad_left{
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.ls{
+	list-style: none;
+}
+
+.ls li{
+	padding-top: 3px;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+.ls li a{
+	color: #C35439;
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.ls li a:hover{
+	color: #783f01;
+}
+
+#col1 .ls{
+	padding-top: 20px;
+}
+
+#col1 .ls li a{
+	font-size: 12px;
+	text-transform: none;
+}
+
+
+/*
+	footer
+*/
+
+.footer_bg
+{
+width: 100%;
+background: url(images/bg-3.jpg) repeat-x center;
+border-top: #000000 solid 8px;
+}
+
+.footer_left
+{float: center}
+
+.footer_right
+{float: rgiht; text-align: right}
+
+.main {
+	width:940px; 	
+	padding-left: 70px;
+	margin:0 auto;
+	line-height:1.6153em;
+	font-size: 12px;
+}
+
+.container_24 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+.container_24 .grid_2 {
+	width:70px;
+}
+
+.container_24 .grid_6 {
+	width:250px;
+}
+
+.container_24 .grid_10 {
+	width:370px;
+}
+
+.container_24 .suffix_1 {
+	padding-right:30px;
+}
+
+.container-2 {
+	padding:44px 0 48px 0;	
+	line-height:21px;
+}
+
+.wrapper {width:100%; overflow:hidden;}
+
+.grid_6, .grid_10, .grid_2
+{
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.block {display:block;}
+
+.mb6 {margin-bottom:6px; font-size: 14px;}
+
+.link-2 {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.link-2:hover {
+	text-decoration:underline;
+	color:#c63d16;
+}
+
+.p1 {margin-bottom:8px;}
+
+.img-indent-bot {margin-bottom:25px;}
+.img-indent-bot1 {margin-bottom:26px;}
+.indent-bot4 {margin-bottom:28px;}
+
+.button-1 {
+					display:inline-block; 
+					padding:4px 9px 3px 9px;
+					font-size:12px;
+					line-height:21px;
+					font-family: Arial, Helvetica, sans-serif;
+					color:#FFFFFF; 
+					background: left top repeat-x #C35439;
+					border-radius:20px;
+					text-decoration:none;
+				}
+				
+.it {font-style:italic;}
+.color-1 {color:#fff;}
+.text-2 {font-size:12px;}  
+
+span.masked {
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+	cursor:pointer;
+	width:69px;
+	height:69px;	
+	z-index:-1;
+}
+
+.lightbox-image:hover span.masked {display:block; z-index:5;}
+
+#footer_bot
+{
+text-align: center;
+padding: 10px;
+}
+
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+
+#slider-wrapper {
+    background:url(images/top.jpg) no-repeat;
+    width: 907px;
+    height: 347px;
+    margin:0 auto;
+}
+
+#slider {
+	position:relative;
+    width: 899px;
+    height: 225px;
+	background:url(images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:260px;
+	bottom:-42px;
+	display: none;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+.btn {
+  background: #bd34d9;
+  background-image: -webkit-linear-gradient(top, #bd34d9, #b8582c);
+  background-image: -moz-linear-gradient(top, #bd34d9, #b8582c);
+  background-image: -ms-linear-gradient(top, #bd34d9, #b8582c);
+  background-image: -o-linear-gradient(top, #bd34d9, #b8582c);
+  background-image: linear-gradient(to bottom, #bd34d9, #b8582c);
+  -webkit-border-radius: 19;
+  -moz-border-radius: 19;
+  border-radius: 19px;
+  font-family: Arial;
+  color: yellow;
+  font-size: 17px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.amar
+{
+	width:100%;
+}

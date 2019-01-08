@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Register</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+<link rel="stylesheet" href="/resources/demos/style.css"/>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-aller.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+	  var date = new Date(); 
+	  var m = date.getMonth(), d = date.getDate(), y = date.getFullYear(); 
+    $( "#dob" ).datepicker({
+    	
+      changeMonth: true,
+      changeYear: true,
+      yearRange: '1900:' + new Date().getFullYear(),
+      maxDate: new Date(y, m, d)
+    });
+  } );
+  </script>
+<script type="text/javascript">
+function validate(){
+	
+	var allLetters = /^[a-zA-Z]+$/;
+    var letter =  /^[a-zA-Z ]{4,30}$/;
+    var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+    var number = /^[0-9]{6,8}$/;
+    var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+	var name = document.forms["form1"]["userid"].value;
+    if (name == "") {
+        alert("User Name must be filled out");
+        return false;
+    }
+    if(!letter.test(name)){
+    	alert("User Name must contains only letters and space with min of 4 and max of 30 characters");
+        return false;
+    }
+    
+    var pass = document.forms["form1"]["pass"].value;
+    if (pass == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+    if (!password.test(pass))
+    {
+    	alert("Your Password should contain at least one digit,least one lower case,least one upper case,at least 8 characters");
+    	return false;
+    }
+    var email = document.forms["form1"]["email"].value;
+    if (email == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+    if(!pattern.test(email))
+    {
+    	alert("Enter valid mail id");
+        return false;
+    }
+    var mobile = document.forms["form1"]["mobile"].value;
+    if (mobile == "") {
+        alert("Mobile number must be filled out");
+        return false;
+    }
+    
+    var address = document.forms["form1"]["address"].value;
+    if (address == "") {
+        alert("Address must be filled out");
+        return false;
+    }
+    
+    var dob = document.forms["form1"]["dob"].value;
+    if (dob == "") {
+        alert("DOB must be filled out");
+        return false;
+    }
+       
+    var e = document.getElementById("s1");
+    var strUser = e.options[e.selectedIndex].value;
+    {
+        alert("Please select a Gender");
+        return false;
+    }
+    
+    var pincode = document.forms["form1"]["pincode"].value;
+    if (pincode == "") {
+        alert("Pincode must be filled out");
+        return false;
+    }
+    
+    var location = document.forms["form1"]["location"].value;
+    if (location == "") {
+        alert("Location must be filled out");
+        return false;
+    }
+    
+    var pic = document.forms["form1"]["pic"].value;
+    if (pic == "") {
+        alert("Profile Pic must be filled out");
+        return false;
+    }
+}
+
+function onlyNos(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        }
+        else if (e) {
+            var charCode = e.which;
+        }
+        else { return true; }
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+    catch (err) {
+        alert(err.Description);
+    }
+}
+</script>
+<style type="text/css">
+<!--
+.style7 {font-size: 44px}
+.style8 {color: #9e4c66}
+.style9 {color: #FFFFFF}
+-->
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+	   <div class="logo">
+        <h1><a href="index.html" class="style7"><span class="style8">Detecting Malicious</span> Facebook Applications</a></h1>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li><a href="index.html"><span>Home Page</span></a></li>
+          <li><a href="AdminLogin.html"><span>Admin Login</span></a></li>
+          <li><a href="UserLogin.html"><span>User Login</span></a></li>
+          <li  class="active"><a href="Register.html"><span>Register</span></a></li>
+          <li><a href="ProjectDetails.html"><span>ProjectDetails</span></a></li>
+        </ul>
+      </div>
+   
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="940" height="271" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="940" height="271" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="940" height="271" alt="" /></a></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2><span><span class="style8"> <span class="style9">New</span> Register</span></span></h2>
+         
+          <div class="clr"></div>
+          <div class="img"><img src="images/img2.jpg" width="630" height="221" alt="" class="fl" /></div>
+          <div class="post_content">
+            <p><form name="form1" action="abcd.jsp" method="post" id="sendemail" enctype="multipart/form-data" onsubmit="return validate();">
+            <ol>
+              <li>
+                <label for="name">User Name (required)</label>
+                <input id="name" name="userid" class="text" />
+              </li>
+               <li>
+                <label for="password">Password (required)</label>
+                <input type="password" id="password" name="pass" class="text" />
+              </li>
+              <li>
+                <label for="email">Email Address (required)</label>
+                <input id="email" name="email" class="text" />
+              </li>
+			  <li>
+                <label for="mobile">Mobile Number (required)</label>
+                <input id="mobile" name="mobile" class="text" maxlength="10" onkeypress="return onlyNos(event,this);" />
+              </li>
+              
+              <li>
+                <label for="address">Your Address</label>
+                <textarea id="address" name="address" rows="3" cols="50"></textarea>
+              </li>
+			  <li>
+                <label for="dob">Date of Birth (required)</label>
+                <input id="dob" name="dob" class="text" />
+              </li>
+			  <li>
+                <label for="gender">Select Gender (required)</label>
+                <select id="s1" name="gender" style="width:480px;" class="text">
+                              <option>Select</option>
+                              <option>MALE</option>
+                              <option>FEMALE</option>
+                  </select>
+              </li>
+			  <li>
+                <label for="pincode">Enter Pincode (required)</label>
+                <input id="pincode" name="pincode" class="text"  maxlength="6" onkeypress="return onlyNos(event,this);"/>
+              </li>
+			  <li>
+                <label for="location">Enter Location (required)</label>
+                <input id="loc" name="location" class="text" />
+              </li>
+			  
+			  <li>
+                <label for="pic">Select Profile Picture (required)</label>
+                <input type="file" id="pic" name="pic" class="text" />
+                <ol>
+                  
+                  <ol>                      
+                    <ol>
+                          <li>
+                            <input type="image" name="imageField" id="imageField" src="Gallery/submit.gif" class="send" />
+                        </li>
+                    </ol>
+                  </ol>
+                </ol>
+			  </li>
+              <li>
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form></p>
+            
+            
+          </div>
+          <div class="clr"></div>
+        </div> 
+      </div>
+      <div class="sidebar">
+        
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span>Sidebar</span> Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="index.html">Home Page </a></li>
+            <li><a href="AdminLogin.html">Admin Main </a></li>
+            <li><a href="UserLogin.html">User Main </a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="ProjectDetails.html">Project Details </a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="gadget">
+          <h2 class="star">Concepts</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu"><li><br />
+              &gt; Application Summary</li>
+            <li><a href="http://www.templatesold.com/"></a>&gt; Required Permission Set</li>
+            <li><a href="http://www.imhosted.com/"></a>&gt; Redirect URI</li>
+            <li><a href="http://www.megastockphotos.com/"></a>&gt;Client ID in App Installation URL</li>
+            <li><a href="http://www.evrsoft.com/"></a>&gt; Posts in App Profile</li>
+            <li><a href="http://www.csshub.com/"></a><br />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>Image</span> Gallery</h2>
+        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+      <div class="col c2">
+        <h2><span>Index Terms </span></h2>
+        <p><span class="article">&gt; Facebook apps</span></p>
+        <p><span class="article">&gt; malicious</span></p>
+        <p><span class="article"> &gt; online social networks</span></p>
+        <p><span class="article">&gt; spam</span></p>
+        <ul class="fbg_ul">
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="col c3">
+        <h2><span>Project Details </span></h2>
+        <p>Malicious hackers impersonate applications</p>
+        <p>&nbsp;</p>
+        <p>13% of observed apps are malicious</p>
+        <p>The emergence of app-nets:</p>
+        <p>Required Permission Set</p>
+        <p>&nbsp;  </p>
+        <p>&nbsp; </p>
+        <p>&nbsp;</p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+<div align=center></div>
+</body>
+</html>
